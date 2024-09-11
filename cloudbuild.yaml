@@ -7,3 +7,5 @@ steps:
   - '-c'
   - |
     echo "PRESUBMIT DONE!"
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
