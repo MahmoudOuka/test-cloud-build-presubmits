@@ -1,0 +1,9 @@
+timeout: 5400s
+
+steps:
+- name: 'google/cloud-sdk:alpine'
+  args:
+  - 'bash'
+  - '-c'
+  - |
+    echo "PRESUBMIT DONE!"
