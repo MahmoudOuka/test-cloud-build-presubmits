@@ -1,11 +1,8 @@
 timeout: 5400s
 
 steps:
-- name: 'google/cloud-sdk:alpine'
-  args:
-  - 'bash'
-  - '-c'
-  - |
-    echo "PRESUBMIT DONE!"
+- name: 'europe-west4-docker.pkg.dev/mahmoudn-vmm-dev/osconfig-packagebuild-presbumit/package-build-presubmit:latest'
+  args: ["gcp-guest", "us-west1-a", "deb11,el8,el8_arm64,el9,el9_arm64,goo"]
+
 options:
   defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
