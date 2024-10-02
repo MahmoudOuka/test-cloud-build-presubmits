@@ -1,7 +1,7 @@
 timeout: 5400s
 
 steps:
-- name: 'europe-west4-docker.pkg.dev/mahmoudn-vmm-dev/osconfig-packagebuild-presbumit/package-build-presubmit:latest'
+- name: 'europe-docker.pkg.dev/compute-image-osconfig-agent/osconfig-package-build-presubmit/osconfig-package-build-presubmit:latest'
   args: ["mahmoudn-vmm-dev", "europe-west4-a", "deb11,el8,el8_arm64,el9,el9_arm64,goo"]
 
 options:
