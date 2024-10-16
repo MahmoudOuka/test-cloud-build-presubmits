@@ -1,0 +1,10 @@
+
+
+timeout: 5400s
+
+steps:
+- name: 'gcr.io/kaniko-project/executor:v1.23.2'
+  args:
+  - --destination=europe-west4-docker.pkg.dev/mahmoudn-vmm-dev/osconfig-packagebuild-presbumit/package-build-presubmit:latest
+  - --context=/workspace
+  - --dockerfile=docker-image/Dockerfile
