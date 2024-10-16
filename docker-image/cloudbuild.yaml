@@ -8,3 +8,6 @@ steps:
   - --destination=europe-west4-docker.pkg.dev/mahmoudn-vmm-dev/osconfig-packagebuild-presbumit/package-build-presubmit:latest
   - --context=/workspace
   - --dockerfile=docker-image/Dockerfile
+
+options:
+  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
